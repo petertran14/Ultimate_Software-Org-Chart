@@ -246,7 +246,7 @@ def view_recieved_requests(email):
     return jsonify({"ViewRecievedRequests": targetRequests})
 
 
-# Find a request given to the logged in user.
+# Find a request given to the logged in user..
 @app.route("/viewSentRequests/<email>", methods=["GET"])
 def view_sent_requests(email):
     rcollection = db["Requests"] 
